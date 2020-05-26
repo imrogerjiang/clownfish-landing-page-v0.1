@@ -20,12 +20,13 @@
 
 
 
-    --hero-margin-left: 200px;
+    --hero-margin-left: 9%;
 }
 
 
-/* Classes */
-div.hero.container{
+/* Hero */
+div.hero.page-container{
+    min-height: 800px;
     height: 100vh;
     background-image: url("assets/images/Hero_Image_1-1920px_x_1280px.png");
     background-position: center;
@@ -33,30 +34,68 @@ div.hero.container{
     background-size: cover;
 }
 img.hero.logo{
-    margin: 60px 0 0 var(--hero-margin-left);
+    margin: 5% 0 0 var(--hero-margin-left);
 
     /* Temp */
-    background-color: lightgray;
+    background-color: var(--chrome-yellow);
 }
 div.hero.message{
-    margin: 200px 0 0 var(--hero-margin-left);
+    margin: 12% 0 0 var(--hero-margin-left);
     width: 600px;
 }
 p.hero{
     font-size: 28px;
 }
-
+div.hero.wrapper{
+    width: 80%; /* Changes horizontal positioning of hero button */
+}
 button.hero{
     margin-top: 40px;
 }
 
 
+
+/* Features */
+div.features.page-container{
+    min-height: 600px;
+    height: 70vh;
+    text-align: center;
+}
+h1.features.title{
+    margin-top: 2%;
+}
+div.features.grid-container{
+    min-height: 300px;
+    min-width: 800px;
+    width: 60%;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 2% auto 0 auto;
+}
+div.features.feature-container{
+    margin: 0 8%;
+}
+img.features{
+    width:100%;
+    /* Temp */
+    background-color: var(--chrome-yellow);
+}
+p.features{
+    margin-top: 10%;
+}
+button.features{
+    margin-top: 2%;
+}
+
+
+
+
+/* Classes */
 .divider{
     height: 80px;
     background-color: var(--clownfish-black);
 }
 .wrapper{
-    width: 100%;
     text-align: center;
 }
 
