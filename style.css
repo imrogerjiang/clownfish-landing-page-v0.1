@@ -1,6 +1,94 @@
 :root{
-    --primary-color: black;
+    /* 
+        Mango Tango:
+        #E17000
+        Tangerine:
+        #F88101
+        Chrome Yellow:
+        #F8A800
+        clownfish white:
+        #FCFCFC
+        clownfish black:
+        #0C0C0C
+    */
+    
+    --clownfish-white: #FCFCFC;
+    --chrome-yellow:#F8A800;
+    --tangerine:#F88101;
+    --mango-tango: #E17000;
+    --clownfish-black: #0C0C0C;
+
+
+
+    --hero-margin-left: 200px;
 }
+
+
+/* Classes */
+div.hero.container{
+    height: 100vh;
+    background-image: url("assets/images/Hero_Image_1-1920px_x_1280px.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+img.hero.logo{
+    margin: 60px 0 0 var(--hero-margin-left);
+
+    /* Temp */
+    background-color: lightgray;
+}
+div.hero.message{
+    margin: 200px 0 0 var(--hero-margin-left);
+    width: 600px;
+}
+p.hero{
+    font-size: 28px;
+}
+
+button.hero{
+    margin-top: 40px;
+}
+
+
+.divider{
+    height: 80px;
+    background-color: var(--clownfish-black);
+}
+.wrapper{
+    width: 100%;
+    text-align: center;
+}
+
+
+/* Tags */
+body{
+    background-color: var(--clownfish-white);
+}
+h1{
+    font: 800 61px Gilroy;
+}
+p{
+    font: 300 22px Gilroy;
+}
+button{
+    height: 2em;
+    padding: .5em;
+    font: 300 29px Gilroy;
+    color: var(--clownfish-white);
+    background-color: var(--tangerine);
+    border: 0;
+}
+
+
+
+
+
+
+
+
+
+
 
 /* Fonts */
 @font-face{
@@ -10,7 +98,6 @@
         url("assets/fonts/Gilroy-Light.woff") format("woff");
     
 }
-
 @font-face{
     font-family: Gilroy;
     font-weight: 400;
@@ -18,14 +105,12 @@
         url("assets/fonts/Gilroy-Medium.woff") format("woff");
     
 }
-
 @font-face{
     font-family: Gilroy;
     font-weight: 800;
     src:url("assets/fonts/Gilroy-Heavy.ttf")  format("truetype"),
         url("assets/fonts/Gilroy-Heavy.woff") format("woff");
 }
-
 @font-face{
     font-family: Gilroy;
     font-weight: 700;
