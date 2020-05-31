@@ -98,22 +98,31 @@ h1.pricing.title{
 }
 div.pricing.grid-container{
     min-height: 300px;
-    min-width: 800px;
+    min-width: 900px;
     width: 60%;
     display:grid;
     grid-template-columns: repeat(3, 1fr);
     margin: 3% auto 0 auto;
 }
 div.pricing.tier-container{
-    min-width: 200px;
+    width: 217px;
     color: var(--tangerine);
     background-color: var(--clownfish-white);
+    cursor: pointer;
     overflow: auto;
-    padding: 10%;
+    padding: 25px;
     border-radius: 50px;
     margin: 3% auto 0 auto;
-    
 }
+div.pricing.tier-container:hover, [type=radio]:checked + div.pricing.tier-container{
+    box-shadow: 0 0 10px var(--clownfish-black);
+}
+[type=radio] { 
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}  
 ul.pricing{
     margin-top: 10%;
 }
@@ -124,6 +133,31 @@ button.pricing{
     margin-top: 3%;
 }
 
+/* Signup Popup */
+div.popup.page-container{
+    position: fixed;
+    display: none;
+    justify-content: center;
+    align-content: center;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(0,0,0,0.7);
+}
+div.popup.page-container.show-popup{
+    display: flex;
+}
+div.popup.form-container{
+    text-align: center;
+    height: 750px;
+    width: 600px;
+    margin: auto;
+    background-color: var(--clownfish-white);    
+}
+h1.popup{
+    margin: 20px;
+}
 
 
 /* Classes */
@@ -140,6 +174,7 @@ button.pricing{
 body{
     background-color: var(--clownfish-white);
 }
+
 h1{
     font: 800 61px Gilroy;
 }
@@ -152,6 +187,9 @@ p{
 li{
     font: 300 26px Gilroy;
 }
+label{
+    width: 100%;
+}
 button{
     height: 2em;
     padding: .5em;
@@ -160,7 +198,7 @@ button{
     background-color: var(--tangerine);
     cursor: pointer;
     border: 0;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 button:hover{
     background-color: var(--chrome-yellow);
@@ -168,17 +206,17 @@ button:hover{
 button:focus{
     outline:thin;
 }
-button.alt{
+button.alt-btn{
     color: var(--clownfish-white);
     background-color: var(--clownfish-black);
 }
-button.alt:hover, button.alt:focus{
+button.alt-btn:hover, button.alt-btn:focus{
     filter:brightness(2);
 }
 footer{
     color: var(--chrome-yellow);
     background-color: var(--clownfish-black);
-    padding: 1%;
+    padding: 40px 1%;
     text-align: center;
 }
 footer div.grid{

@@ -53,44 +53,58 @@
     <div class="pricing page-container">
         <h1 class="pricing title">Our pricing</h1>
         <div class="pricing grid-container">
-            <div class="pricing tier-container">
-                <h2 class="pricing">Package 1</h2>
-                <ul class="pricing">
-                    <li>Feature</li>
-                    <li>Feature</li>
-                    <li>Feature</li>
-                    <li>Feature</li>
-                    <li>Feature</li>
-                </ul>
-                <h1 class="pricing price">$49pm</h1>
-            </div>
-            <div class="pricing tier-container">
-                <h2 class="pricing">Package 2</h2>
-                <ul class="pricing">
-                    <li>Feature</li>
-                    <li>Feature</li>
-                    <li>Feature</li>
-                    <li>Feature</li>
-                    <li>Feature</li>
-                </ul>
-                <h1 class="pricing price">$89pm</h1>
-            </div>
-            <div class="pricing tier-container">
-                <h2 class="pricing">Package 3</h2>
-                <ul class="pricing">
-                    <li>Feature</li>
-                    <li>Feature</li> 
-                    <li>Feature</li>
-                    <li>Feature</li>
-                    <li>Feature</li>
-                </ul>
-                <h1 class="pricing price">$149pm</h1>
-            </div>
+            <label>
+                <input type="radio" name="selected-tier" value="base">
+                <div class="pricing tier-container">
+                    <h2 class="pricing">Package 1</h2>
+                    <ul class="pricing">
+                        <li>Feature</li>
+                        <li>Feature</li>
+                        <li>Feature</li>
+                        <li>Feature</li>
+                        <li>Feature</li>
+                    </ul>
+                    <h1 class="pricing price">$49pm</h1>
+                </div>
+            </label>
+            <label>
+                <input type="radio" name="selected-tier" value="premium">
+                <div class="pricing tier-container">
+                    <h2 class="pricing">Package 2</h2>
+                    <ul class="pricing">
+                        <li>Feature</li>
+                        <li>Feature</li>
+                        <li>Feature</li>
+                        <li>Feature</li>
+                        <li>Feature</li>
+                    </ul>
+                    <h1 class="pricing price">$89pm</h1>
+                </div>
+            </label>
+            <label>
+                <input type="radio" name="selected-tier" value="enterprise">
+                <div class="pricing tier-container">
+                    <h2 class="pricing">Package 3</h2>
+                    <ul class="pricing">
+                        <li>Feature</li>
+                        <li>Feature</li> 
+                        <li>Feature</li>
+                        <li>Feature</li>
+                        <li>Feature</li>
+                    </ul>
+                    <h1 class="pricing price">$149pm</h1>
+                </div>
+            </label>
         </div>
-        <button class="pricing alt">Button</button>
+        <button id="signup-btn" class="pricing alt-btn">Button</button>
     </div>
-
-    <div class="divider"></div>
+    
+    <!-- Signup Popup -->
+    <div class="popup page-container">
+        <div class="popup form-container">
+            <h1 class="popup">This is the popup form.</h1>
+        </div>
+    </div>
 
     <footer>
         <div class="grid">
