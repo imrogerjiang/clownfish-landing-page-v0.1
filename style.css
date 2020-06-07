@@ -20,7 +20,7 @@
 
 
 
-    --hero-margin-left: 9%;
+    --hero-margin-left: 7%;
 }
 
 
@@ -34,14 +34,15 @@ div.hero.page-container{
     background-size: cover;
 }
 img.hero.logo{
+    width: 400px;
     margin: 5% 0 0 var(--hero-margin-left);
-
-    /* Temp */
-    background-color: var(--chrome-yellow);
 }
 div.hero.message{
-    margin: 12% 0 0 var(--hero-margin-left);
+    margin: 8% 0 0 var(--hero-margin-left);
     width: 600px;
+}
+h1.hero{
+    font-size: 80px;
 }
 p.hero{
     font-size: 28px;
@@ -64,21 +65,22 @@ div.features.page-container{
 div.features.grid-container{
     min-height: 300px;
     min-width: 800px;
-    width: 60%;
+    width: 70%;
     display:grid;
     grid-template-columns: repeat(3, 1fr);
-    margin: 3% auto 0 auto;
+    margin: 4% auto 0 auto;
 }
 div.features.feature-container{
     margin: 0 8%;
 }
 img.features{
+    margin-top: 7%;
     width:100%;
     /* Temp */
     background-color: var(--chrome-yellow);
 }
 p.features{
-    margin-top: 10%;
+    margin-top: 7%;
 }
 button.features{
     margin-top: 3%;
