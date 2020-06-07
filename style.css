@@ -38,7 +38,7 @@ img.hero.logo{
     margin: 5% 0 0 var(--hero-margin-left);
 }
 div.hero.message{
-    margin: 8% 0 0 var(--hero-margin-left);
+    margin: 5% 0 0 var(--hero-margin-left);
     width: 600px;
 }
 h1.hero{
@@ -107,7 +107,7 @@ div.pricing.grid-container{
     margin: 3% auto 0 auto;
 }
 div.pricing.tier-container{
-    width: 217px;
+    width: 250px;
     color: var(--tangerine);
     background-color: var(--clownfish-white);
     cursor: pointer;
